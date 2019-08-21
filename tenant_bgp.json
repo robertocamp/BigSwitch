@@ -1,0 +1,61 @@
+[ {
+  "logical-router" : {
+    "bgp" : {
+      "debug-log-events" : true,
+      "graceful-restart" : {
+        "enable" : true
+      },
+      "local-as" : 4200000000,
+      "log-neighbor-changes" : true,
+      "maximum-path-count" : 2,
+      "neighbor" : [ {
+        "description" : "NEIGH1 TEST",
+        "ebgp-multihop-count" : 2,
+        "hold-time" : 90,
+        "max-prefix" : {
+          "warning-only" : false
+        },
+        "name" : "NEIGH1",
+        "neighbor-ip-as" : {
+          "ip-address" : "192.168.100.1",
+          "remote-as" : 4200000030
+        },
+        "shutdown" : false,
+        "soft-reconfiguration-inbound" : true
+      }, {
+        "description" : "NEIGH2 TEST",
+        "ebgp-multihop-count" : 2,
+        "hold-time" : 90,
+        "max-prefix" : {
+          "warning-only" : false
+        },
+        "name" : "NEIGH2",
+        "neighbor-ip-as" : {
+          "ip-address" : "192.168.200.1",
+          "remote-as" : 4200000040
+        },
+        "shutdown" : false
+      }, {
+        "description" : "NEIGH3 TEST",
+        "ebgp-multihop-count" : 2,
+        "hold-time" : 90,
+        "max-prefix" : {
+          "warning-only" : false
+        },
+        "name" : "NEIGH3",
+        "neighbor-ip-as" : {
+          "ip-address" : "192.168.0.1",
+          "remote-as" : 4200000050
+        },
+        "shutdown" : false
+      } ],
+      "protocol-ip" : "1.1.1.18",
+      "redistribute-connected" : true,
+      "redistribute-static" : true,
+      "router-ip-address" : "1.1.1.18"
+    }
+  },
+  "multicast-enable" : false,
+  "name" : "external",
+  "tenant-description" : "TEST"
+} ]
