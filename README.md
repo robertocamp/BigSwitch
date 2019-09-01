@@ -1,2 +1,2 @@
-# DCNM-API
-Using Pyhthon to access  Cisco DCNM API
+# BigSwitch API
+Using Pyhthon to access  BigSwitch API
