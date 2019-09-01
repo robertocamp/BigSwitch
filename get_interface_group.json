@@ -1,0 +1,31 @@
+# api call:
+# /api/v1/data/controller/applications/bcf/info/fabric/interface-group/summary
+
+# returns:
+[ {
+  "discovery" : [ "auto" ],
+  "leaf-group" : "R1",
+  "mode" : "static-auto-controller-inband",
+  "name" : "c0",
+  "state" : "up"
+}, {
+  "discovery" : [ "lldp" ],
+  "leaf-group" : "R1",
+  "mode" : "static",
+  "name" : "esx1.tme.bigswitch.com-DSwitch",
+  "state" : "up"
+}, {
+  "mode" : "static",
+  "name" : "esx1.tme.bigswitch.com-vSwitch0-vmnic0",
+  "state" : "down"
+}, {
+  "discovery" : [ "lldp" ],
+  "leaf-group" : "R2",
+  "mode" : "static",
+  "name" : "esx2.tme.bigswitch.com-DSwitch",
+  "state" : "up"
+}, {
+  "mode" : "static",
+  "name" : "esx2.tme.bigswitch.com-vSwitch0-vmnic0",
+  "state" : "down"
+} ]
