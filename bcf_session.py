@@ -5,11 +5,6 @@ import ssl
 import sys
 from  BCFPOD1 import URL, USER, PASSWORD, TOKEN, POD
 
-# You can use the access-token command to create a long-lived token that can be used for authentication with external scripting,
-# such as RESTful API.
-#The access token value returned by the CLI command is used in place of the session cookie that is typically generated
-# when a user completes a login process.
-
 
 
 class bcf_session():
@@ -66,9 +61,7 @@ class bcf_session():
             print(e.code)
 
 
-        # for the POST ,  does the data have to be json-encoded ?
-
-
+ 
 
 bcf = bcf_session(URL, USER, PASSWORD, TOKEN, POD)
 # TEST OK:
