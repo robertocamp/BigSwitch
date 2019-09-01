@@ -5,7 +5,7 @@ import ssl
 import sys
 from  BCFPOD1 import URL, USER, PASSWORD, TOKEN, POD
 
-
+# /api/v1/data/controller/core/aaa/session[auth-token="XH5NJ2lN2gvsgTgZ0UIBVosnTt7LCPGO"]
 
 class bcf_session():
     def __init__(self, url, user, passwd, token, pod):
