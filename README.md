@@ -15,7 +15,7 @@ Authentication to the BigSwitch API in this project is done via username and pas
 Access to the BigSwitch API will be done via a local account that is configured on the controller.
 This account may or may not be the 'admin' account. 
 
-The password can be stored and encrypted using the Imp Common "encrypt" function.  This code is now included in this project ( see "settings" section)
+testing authentication: run the bcf_session.py file
 
 2. settings
 
