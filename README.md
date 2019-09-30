@@ -34,11 +34,3 @@ bcf_ops.py ('bcf' in code) is Python script which defines various methods and fu
 4. deployment file
 5. data file
 
-Appendix:
-
-clone branch:
-git clone -b robert_27_sept_imp_common_encrypt_password --single-branch https://sfgitlab.opr.statefarm.org/cloud9/BigSwitch.git
-git clone -b Robert_29_sept_caas_interface_group --single-branch https://sfgitlab.opr.statefarm.org/cloud9/BigSwitch.git
-
-
-
