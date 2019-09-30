@@ -1,4 +1,9 @@
 # RUN INSTRUCTIONS:
+# This is a deployment file to deploy interface groups fo Linux servers which are using two NIC cards.
+# Data is contained in the data file, xkubnodes.csv
+# The values of 'nic1' and 'nic2' are derived from the LLDP information received from the card
+# NIC1 = enp4s0f0
+# NIC2 = enp5s0f0
 # python3 xkub_interface_group.py
 
 """
