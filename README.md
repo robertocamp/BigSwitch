@@ -19,13 +19,28 @@ testing authentication: run the bcf_session.py file
 
 2. settings
 
+The settings file is currently named after the active POD.
+The setting file contains:
+* pod name
+* an encryption function that pulls an encrypted password from a password store.
+(The password encryption mechanism is beyond the scope of this repo)
+* POD base url ( the API uses port 8443)
+* API username
+
 
 
 3. session
 
-a "session" to the BigSwitch API is achieved by passing accepted logon credentials to the API and getting a session token back
+A "session" to the BigSwitch API is achieved by passing accepted logon credentials to the API and getting a session token back
 You can use the access-token command to create a long-lived token that can be used for authentication with external scripting,
 such as RESTful API. The access token value returned by the CLI command is used in place of the session cookie that is typically generated when a user completes a login process.
+
+In this repo, session cookie is created by calling 'bcf_sesion' function from the 'bcf_session.py' file.
+
+To test:
+python bcf_session.py 
+
+should return an access token.
 
 3. bcf.ops
 
